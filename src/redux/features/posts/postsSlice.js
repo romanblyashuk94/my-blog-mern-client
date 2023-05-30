@@ -85,7 +85,6 @@ export const postsSlice = createSlice({
     [getAllPosts.fulfilled]: (state, action) => {
 
       if (action?.payload?.posts) {
-        debugger
         state.posts = action.payload.posts;
       }
 

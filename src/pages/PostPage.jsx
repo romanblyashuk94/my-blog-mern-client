@@ -79,7 +79,7 @@ function PostPage() {
             >
               {imageUrl && (
                 <img
-                  src={`http://localhost:3002/${imageUrl}`}
+                  src={`https://my-blog-mern-server-y8s3.onrender.com/${imageUrl}`}
                   alt={imageUrl}
                   className="object-cover w-full"
                 />

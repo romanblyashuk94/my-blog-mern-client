@@ -66,7 +66,10 @@ function EditPostPage(props) {
 
       <div className="flex object-cover py-2">
         {oldImage && (
-          <img src={`http://localhost:3002/${oldImage}`} alt={oldImage.name} />
+          <img
+            src={`https://my-blog-mern-server-y8s3.onrender.com/${oldImage}`}
+            alt={oldImage.name}
+          />
         )}
 
         {newImage && (
