@@ -37,7 +37,7 @@ function MyPostsPage() {
   }
 
   return (
-    <div className="w-1/2 mx-auto py-10 flex flex-col gap-10">
+    <div className="w-1/2 mx-auto py-10 flex flex-col gap-10 lg:w-full">
       {posts.map((post) => (
         <PostItem key={post._id} post={post} />
       ))}

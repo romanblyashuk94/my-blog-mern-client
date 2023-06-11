@@ -22,13 +22,13 @@ function Navbar() {
   return (
     <div className="flex py-4 justify-between items-center">
       <Link to="/">
-        <span className="flex justify-center items-center w-15 h-15 bg-gray-600 text-xl text-white rounded-sm p-2">
+        <span className="flex justify-center items-center w-15 h-15 bg-gray-600 text-xl text-white rounded-sm p-2 sm:text-xs sm:w-13">
           MyBlog
         </span>
       </Link>
 
       {isAuth && (
-        <ul className="flex gap-8">
+        <ul className="flex gap-8 sm:gap-5">
           <li>
             <NavLink
               to="/"
@@ -62,8 +62,8 @@ function Navbar() {
       <div className="flex gap-5 justify-center items-center text-xs text-white rounded-sm">
         {isAuth ? (
           <>
-            <span className="text-white">{user?.username || ""}</span>
-            <button onClick={handleLogout} className="p-4  bg-gray-600">
+            <span className="text-white sm:hidden">{user?.username || ""}</span>
+            <button onClick={handleLogout} className="p-4  bg-gray-600 sm:p-2">
               Sign out
             </button>
           </>

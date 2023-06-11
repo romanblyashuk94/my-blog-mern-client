@@ -71,8 +71,8 @@ function PostPage() {
         Go back
       </button>
 
-      <div className="flex gap-10 py-8">
-        <div className="w-2/3">
+      <div className="flex gap-10 py-8 md:flex-col">
+        <div className="w-2/3 md:w-full">
           <div className="flex flex-col basis-1/4 flex-grow">
             <div
               className={imageUrl ? "flex rounded-sm h-80" : "flex rounded-sm"}
@@ -122,7 +122,7 @@ function PostPage() {
             </div>
           </div>
         </div>
-        <div className="w-1/3 p-8 bg-gray-700 flex flex-col gap-2 rounded-sm">
+        <div className="w-1/3 p-8 bg-gray-700 flex flex-col gap-2 rounded-sm md:w-full">
           {user && <CommentForm postId={post._ids} />}
           {postComments.map((comment) => (
             <CommentItem key={comment._id} comment={comment} />
