@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import axios from "../utils/axios";
 import PostItem from "../components/PostItem";
 import { useSelector } from "react-redux";
+import Loader from "../components/Loader";
 
 function MyPostsPage() {
   const { posts: allPosts } = useSelector((state) => state.posts);
@@ -40,6 +41,7 @@ function MyPostsPage() {
       {posts.map((post) => (
         <PostItem key={post._id} post={post} />
       ))}
+      {isLoading && <Loader />}
     </div>
   );
 }
