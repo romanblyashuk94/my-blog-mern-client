@@ -119,6 +119,7 @@ export const postsSlice = createSlice({
       state.isLoading = true;
     },
     [updatePost.fulfilled]: (state, action) => {
+      debugger
       const postIndex = state.posts.findIndex(post => post._id === action.payload.post._id)
       state.posts[postIndex] = action.payload.post
       state.isLoading = false;

@@ -30,7 +30,7 @@ function EditPostPage(props) {
     updatedPost.append("id", params.id);
     updatedPost.append("title", title);
     updatedPost.append("text", text);
-    updatedPost.append("imageUrl", newImage || oldImage);
+    updatedPost.append("image", newImage || oldImage);
 
     dispatch(updatePost(updatedPost));
     navigate(-1);
