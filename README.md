@@ -2,7 +2,7 @@
 Blogging application. Implemented such features as authorization, registration, viewing all posts and comments to them, the ability to add, delete and update your own posts, etc.
 
 # Demo
-Here you can look at the task itself [DEMO LINK](https://romanblyashuk94.github.io/my-blog-mern-client/)
+Here you can look at app itself: [DEMO LINK](https://romanblyashuk94.github.io/my-blog-mern-client/)
 
 # API
 Here you can look server code: [BACK-END REPO](https://github.com/romanblyashuk94/my-blog-mern-backend)
